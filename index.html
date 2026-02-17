@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Experience the ultimate adventure travel with us. Explore mountains, deserts, forests, and more." />
+    <title>ADVENTURE - Create Your Outdoor Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Placeholder favicon -->
+    <link rel="icon" href="https://raw.githubusercontent.com/shivansh2409/First-Project/main/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav_1">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/shivansh2409/First-Project/main/logo.png"
+                    alt="Adventure Logo" style="height: 40px;">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..." aria-label="Search" />
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="links" id="nav-links">
+                <a href="#">Home</a>
+                <a href="#services">Services</a>
+                <a href="#explore">Explore</a>
+                <a href="#book">Book Now</a>
+                <a href="#contact">Contact</a>
+                <button class="login" id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+                <button class="login">Login</button>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas> <!-- Particle Background -->
+            <div class="hero_text fade-in-up">
+                <h1 id="typewriter-text">ADVENTURE</h1>
+                <p>Create Your Outdoor Adventure Cover With</p>
+                <button class="explore" onclick="openQuiz()">Find Your Trip</button> <!-- Changed trigger -->
+                <button class="explore"
+                    onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})">Explore
+                    Now</button>
+            </div>
+            <div class="hero-footer fade-in-up" onclick="void(0)">
+                <div class="footer-item">
+                    <h2>12K+</h2>
+                    <p>Successful Trip</p>
+                </div>
+                <div class="footer-item">
+                    <h2>2K+</h2>
+                    <p>Regular Clients</p>
+                </div>
+                <div class="footer-item">
+                    <h2>15</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="footer-item">
+                    <h2>100+</h2>
+                    <p>Professional Guides</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="services-text fade-in-up">
+                <div class="text">
+                    <h2>The Wonders Of Nature</h2>
+                    <p>
+                        We seek to provide the authentic content for traveller around the
+                        variety of travel destinations
+                    </p>
+                </div>
+            </div>
+            <div class="services-cards fade-in-up">
+                <div class="card">
+                    <div class="text">
+                        <h3>Travel Arrangements</h3>
+                        <p>
+                            We seek to provide the authentic content for traveller around
+                            the variety of travel destinations
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <h3>Best Hotels</h3>
+                        <p>
+                            We seek to provide the authentic content for traveller around
+                            the variety of travel destinations
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <h3>Tourist Guide</h3>
+                        <p>
+                            We seek to provide the authentic content for traveller around
+                            the variety of travel destinations
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <h3>Camping Kit</h3>
+                        <p>
+                            We seek to provide the authentic content for traveller around
+                            the variety of travel destinations
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vacation Section -->
+        <section class="book-info fade-in-up">
+            <div class="img-grid">
+            </div>
+        </section>
+        <section class="book fade-in-up" id="vacation">
+            <div class="img">
+                <div class="img-1" role="img" aria-label="Vacation Image 1"></div>
+                <div class="img-2" role="img" aria-label="Vacation Image 2"></div>
+                <div class="img-3" role="img" aria-label="Vacation Image 3"></div>
+                <div class="img-4" role="img" aria-label="Vacation Image 4"></div>
+            </div>
+            <div class="text">
+                <h1>Here's what makes a vacation perfect for you!</h1>
+                <p>Whether you're planning a family vacation with your pet, a relaxing weekend getaway, or an
+                    adventurous excursion, vacation rentals are ideal for trips of all types.</p>
+
+                <!-- Booking Calendar Integration -->
+                <div class="booking-calendar">
+                    <h3>Check Availability</h3>
+                    <input type="date" id="booking-date" class="date-picker">
+                    <button>Check Dates</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Section -->
+        <section class="places" id="explore">
+            <div class="fade-in-up">
+                <h2>Explore The Nature With Us</h2>
+
+                <!-- Map Integration -->
+                <div id="adventure-map"
+                    style="height: 300px; width: 100%; border-radius: 10px; margin-bottom: 2rem; background: #333; display: flex; align-items: center; justify-content: center;">
+                    <p style="color: #aaa;">[Interactive Map Placeholder - Would load Leaflet.js here]</p>
+                </div>
+
+                <div class="imges">
+                    <div class="card-1">
+                        <h2>MOUNTAIN</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>DESERT</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>FOREST</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>BEACH</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>ARCHITECTURE</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>RIVERS</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>TRADITIONS</h2>
+                    </div>
+                    <div class="card-1">
+                        <h2>TEMPLES</h2>
+                    </div>
+                </div>
+
+                <!-- Affiliate Links -->
+                <div class="affiliate-links fade-in-up" style="text-align: center; margin-top: 2rem;">
+                    <p>Recommended Gear: <a href="#" style="color: var(--accent-color);">Hiking Boots</a> | <a href="#"
+                            style="color: var(--accent-color);">Camping Tents</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Section with Testimonials -->
+        <section class="reason fade-in-up">
+            <h2>Reason For Choosing Us</h2>
+            <div class="reason-cards">
+                <div class="reason-card">
+                    <div class="icon" aria-hidden="true">🌍</div>
+                    <h3>World Class Service</h3>
+                    <p>Authentic content for traveller around the variety of travel destinations</p>
+                </div>
+                <div class="reason-card">
+                    <div class="icon" aria-hidden="true">💰</div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>Authentic content for traveller around the variety of travel destinations</p>
+                </div>
+                <div class="reason-card">
+                    <div class="icon" aria-hidden="true">📞</div>
+                    <h3>24/7 Support</h3>
+                    <p>Authentic content for traveller around the variety of travel destinations</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Carousel -->
+            <div class="testimonials fade-in-up" id="testimonials">
+                <h2>What Travelers Say</h2>
+                <div class="carousel-container">
+                    <div class="testimonial-slide active">
+                        <p>"The best mountain trek of my life! Highly recommended."</p>
+                        <span>- Jane Doe</span>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"Amazing service and breathtaking views. Will book again."</p>
+                        <span>- John Smith</span>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"Professional guides and seamless experience."</p>
+                        <span>- Sarah Lee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Footer Section -->
+        <section class="footer" id="contact">
+            <div class="footer-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container fade-in-up">
+                    <h3>Contact Us</h3>
+                    <form id="contact-form" autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="3"
+                                required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter-container fade-in-up">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <button onclick="openUploadModal()"
+                        style="margin-top: 1rem; background: transparent; border: 1px solid var(--accent-color); color: var(--accent-color);">Share
+                        Your Story</button>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links fade-in-up">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <h6>© 2024 Travel Adventure. All rights reserved.</h6>
+                <p>
+                    Portfolio by
+                    <a href="https://my-portfolio-mauve-seven-88.vercel.app/" target="_blank" rel="noopener">Shivansh
+                        Rathore</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuiz()">&times;</span>
+            <h2>Find Your Adventure Style</h2>
+            <div id="quiz-question">
+                <p>What is your preferred terrain?</p>
+                <button onclick="quizAnswer('mountain')">Mountains</button>
+                <button onclick="quizAnswer('beach')">Beaches</button>
+                <button onclick="quizAnswer('forest')">Forests</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeUploadModal()">&times;</span>
+            <h2>Share Your Adventure</h2>
+            <input type="file" id="user-upload">
+            <button onclick="alert('Upload feature coming soon (Backend required)!')">Upload</button>
+        </div>
+    </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
