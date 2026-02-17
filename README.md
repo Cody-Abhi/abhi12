@@ -95,22 +95,19 @@ All animations respect **prefers-reduced-motion** for accessibility.
 
 ---
 
-## 🖼 Screenshots
-
-| View | Preview |
-|----|----|
-| Desktop | ![Desktop](screenshots/desktop.png) |
-| Mobile | ![Mobile](screenshots/mobile.png) |
-| Hover | ![Hover](screenshots/hover.gif) |
-
----
-
 ## 🛠 Technologies Used
 
 - **HTML5** – Semantic structure
 - **CSS3** – Grid, Flexbox, Animations
 - **Vanilla JavaScript** – Interactivity
 - **Unsplash Images** – Demo assets
+
+---
+
+## AI technologies used 
+- **Grok** - Get detail strcuture
+- **Antigravity** - Code editor
+- **Github Deploy**
 
 No frameworks → fast & lightweight (<1MB)
 
